@@ -1,0 +1,97 @@
+/* Meals.css */
+@keyframes meals-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.summary {
+  max-width: 50%; 
+  text-align: center;
+  margin-top: -5rem;
+  position: relative;
+  background-color: hsl(278, 35%, 78%);
+  width: 100%;
+  margin: auto;
+  color: white;
+  box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  padding: 0.5rem;
+  align-items: center;
+}
+
+.form button {
+  font: inherit;
+  border: 1px solid #cdb4db;
+  color: white;
+  padding: 0.25rem 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #cdb4db;
+  font-weight: bold;
+}
+
+
+.summary h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.summary p {
+  margin: 0.5rem 0;
+}
+
+.meals ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form button:hover,
+.form button:active {
+  border-color: #ffc8dd;
+  background-color: #ffc8dd;
+}
+
+
+.meals {
+  max-width: 60rem;
+  margin: 2rem auto;
+  width: 90%;
+  animation: meals-appear 1s ease-out forwards;
+}
+.meal {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.meal h3 {
+  margin: 0 0 0.25rem 0;
+}
+
+.description {
+  font-style: italic;
+}
+
+.price {
+  margin-top: 0.25rem;
+  font-weight: bold;
+  color: #ffc8dd;
+  font-size: 1.25rem;
+}
+
+.form {
+  text-align: right;
+}
+
